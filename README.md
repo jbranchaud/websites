@@ -13,4 +13,6 @@ Lutheran Center pool league that I helped organize.
 
 ## License
 
+Copyright (c) 2013 Josh Branchaud under the MIT License.
+See [LICENSE]() for details.
 
