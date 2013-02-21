@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+    Webmaster: Josh Branchaud
+
+    Big thanks to Enrique Ramirez for an amazing HTML5 tutorial at:
+    http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/
+-->
+
+<head>
+	<meta charset="utf-8" />
+	<title>Home - JoshBranchaud.com</title>
+	
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/op1-main.css" />
+	
+	<!-- Javascripts -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+	<!-- For those using IE6 and IE7, update it, uninstall it, and then download a real browser like Chrome or Firefox -->
+
+	<!-- Google Analytics Stuff -->
+	<script type="text/javascript">
+	
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-21389741-2']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script><!-- end of Google Analytics Stuff -->
+	
+</head>
+
+<body id="index" class="home">
+
+	<!-- Fork Me on GitHub Logo/Link -->
+    <a href="http://github.com/jbranchaud">
+    	<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/abad93f42020b733148435e2cd92ce15c542d320/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub">
+    </a>
+    
+    <header id="banner" class="body">
+
+		<!-- Follow Me on Twitter Logo/Link -->
+	    <div id="twitterfollow">
+	        <a href="http://www.twitter.com/jbrancha"><img src="http://twitter-badges.s3.amazonaws.com/follow_me-b.png" alt="Follow jbrancha on Twitter"/></a>
+	    </div>
+
+		<!-- Find Me on LinkedIn Logo/Link -->
+	    <div id="linkedinshare">
+	        <a href="http://www.linkedin.com/pub/josh-branchaud/30/b42/928"><img src="http://www.linkedin.com/img/webpromo/btn_viewmy_160x25.png" width="160" height="25" border="0" alt="View Josh Branchaud's profile on LinkedIn"></a>
+	    </div>
+
+		<h1><a href="index.html">Josh Branchaud</a>
+        <strong>The internet is a series of tubes and somehow you found your way here</strong></h1>
+
+        <nav><ul>
+            <li class="active" title="Go Home!"><a href="index.html">home</a></li>
+            <li><a href="projects.html" title="All my projects">projects</a></li>
+            <li><a href="research.html" title="Research and Publications">research</a></li>
+            <li><a href="resources.html" title="All sorts of links">resources</a></li>
+            <li><a href="http://joshbranchaud.wordpress.com" title="My personal blog">blog</a></li>
+            <li><a href="http://www.flickr.com/photos/jbranchaud/" title="My Photography">photography</a></li>
+        </ul></nav>
+
+	</header><!-- end of banner -->
+
+    <aside id="featured" class="body"><article>
+
+        <figure id="portrait">
+            <img src="images/ProfilePic05-23-2012.jpg" width="250px" height="250px" alt="Picture of me" />
+        </figure>
+
+        <hgroup>
+            <h2>About Me</h2>
+        </hgroup>
+        <p>I tell machines what to do everyday...</p>
+        <p>I love writing code...</p>
+        <p>I am a programmer!</p>
+        <p>Currently, I am a graduate research assistant and master's student at the University of Nebraska-Lincoln studying computer science. I am excited for the research I will be doing over the next two years, but I also look forward to getting out into industry. There is a lot of exciting stuff happening in the field right now. In addition to constantly being glued to my computer, I am a runner and I recently competed in the Omaha Half Marathon. I am still trying to decide what race I will work towards next. I am also engaged and will be marrying my fiance, Erin, on Sept. 8, 2012 (which seems to be approaching more quickly each day). Lastly, I am a huge Nebraska football fan. This is the Huskers' first year in the Big 10 and I am excited to see how things turn out. Go Big Red!</p>
+
+    </article></aside><!-- end of featured -->
+
+    <section id="content" class="body">
+
+        <div id="side-content" class="body">
+
+	        <div id="twitterfeed" class="body">
+	
+	            <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+	            <script>
+	                new TWTR.Widget({
+	                  version: 2,
+	                  type: 'profile',
+	                  rpp: 10,
+	                  interval: 6000,
+	                  width: 250,
+	                  height: 300,
+	                  theme: {
+	                    shell: {
+	                      background: '#333333',
+	                      color: '#ffffff'
+	                    },
+	                    tweets: {
+	                      background: '#E5E5E5',
+	                      color: '#010101',
+	                      links: '#2A4580'
+	                    }
+	                  },
+	                  features: {
+	                    scrollbar: true,
+	                    loop: false,
+	                    live: true,
+	                    hashtags: true,
+	                    timestamp: true,
+	                    avatars: false,
+	                    behavior: 'all'
+	                  }
+	                }).render().setUser('jbrancha').start();
+	            </script>
+	
+	        </div><!-- end of twitterfeed -->
+
+			<div id="SO-flair" class="body">
+
+	            <a href="http://stackoverflow.com/users/535590/treebranch">
+					<img src="http://stackoverflow.com/users/flair/535590.png?theme=dark" width="208" height="58" alt="profile for Treebranch at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Treebranch at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+				</a>
+
+        	</div><!-- end of SO-flair -->
+
+        </div><!-- end of side-content -->
+
+        <div id="updates" class="body">
+
+            <h2>Recent Updates</h2>
+
+            <ol id="updates-list">
+
+                <li><article class="update">
+                    <header>
+                        <h2 class="update-title">Working at NASA</h2>
+                    </header>
+
+                    <footer>
+                        <abbr class="published" title="2011-09-28T14:44:00-06:00">
+                            May 15 2012
+                        </abbr>
+                    </footer>
+
+                    <div class="update-content">
+                        <p>
+                            This summer I am working for the National Institute of Aerospace (NIA) at NASA Langley in Virginia. I am working with the Formal Methods group (Suzette Person and Neha Rungta in particular) on a tool called DiSE. DiSE is a state-of-the-art technique that reduces the expenses of symbolic execution. This summer we are working on an extension that will enable us to get reductions in the analysis of heap-allocated memory.
+                        </p>
+                    </div>
+                </article></li>
+
+
+                <li><article class="update">
+                    <header>
+                        <h2 class="update-title">Stepping It Up: Nikon D3100</h2>
+                    </header>
+
+                    <footer>
+                        <abbr class="published" title="2011-09-28T14:44:00-06:00">
+                            March 3rd 2012
+                        </abbr>
+                    </footer>
+
+                    <div class="update-content">
+                        <p>
+                            I have been into photographry for a number of years now, but with only ever having a point-and-shoot camera, I have never taken it too seriously. I had been wanting to upgrade to a more legitimate camera for sometime. I finally decided to step it up to a Nikon D3100. I was able to get a good deal on the body and two lenses (Nikkor 18-55mm f/3.5-4.5 and Nikkor 55-300mm f/3.5-4.5) through Nikon and got them at <a href="http://www.rockbrookcamera.com/">Rockbrook Camera</a> in Lincoln. To see some of the photos I post, check me out on <a href="http://www.flickr.com/photos/jbranchaud/">Flickr</a>.
+                        </p>
+                    </div>
+                </article></li><!-- end of an update article -->
+
+                <li><article class="update">
+                    <header>
+                        <h2 class="update-title">Meetup in Irvine</h2>
+                    </header>
+
+                    <footer>
+                        <abbr class="published" title="2011-09-28T14:44:00-06:00">
+                            March 3rd 2012
+                        </abbr>
+                    </footer>
+
+                    <div class="update-content">
+                        <p>
+                            Back in September the PIs and students (which includes myself) of a new Computer Science research grant got together in Pittsburgh for an initial meetup. Since then we have all been working away at our research while staying in touch with conference calls every two weeks. We just had a second meetup, but this time it was in Irvine, CA. Each student got to present on what they have been working on and it was interesting to see everyone's progress over the past 6 months. Our next meetup will be at UNL in Lincoln, NE (that's us!).
+                        </p>
+                    </div>
+                </article></li><!-- end of an update article -->
+
+                <li><article class="update">
+                    <header>
+                        <h2 class="update-title">She's Back From Cuba</h2>
+                    </header>
+
+                    <footer>
+                        <abbr class="published" title="2011-09-28T14:44:00-06:00">
+                            December 20th 2011
+                        </abbr>
+                    </footer>
+
+                    <div class="update-content">
+                        <p>
+                            My fiance, Erin, just spent the past semester (4ish months) studying abroad in Cuba. She is finally back and with lots of great experiences and stories. Perhaps if she ever posts her pictures from the trip somewhere besides Facebook I can link to some of them.
+                        </p>
+                    </div>
+                </article></li><!-- end of an update article -->
+
+                <li><article class="update">
+                    <header>
+                        <h2 class="update-title">First Conference - ASE</h2>
+                    </header>
+
+                    <footer class="update-info">
+                        <abbr class="published" title="2011-09-28T14:44:00-06:00">
+                            November 18th 2011
+                        </abbr>
+                    </footer>
+
+                    <div class="update-content">
+                        <p>
+                            Earlier this month I got to attend my first conference, the International Conference on Automated Software Engineering (ASE), in Lawrence, KS. I wasn't presenting a paper or poster, just attending for the experience. It was exciting getting to meet a bunch of people in my research area. It was also nice getting to finally meet a person face-to-face for the first time that I had been working with for months.
+                        </p>
+                    </div>
+                </article></li><!-- end of an update article -->
+
+                <li><article class="update">
+                    <header>
+                        <h2 class="update-title">2011 Omaha Half Marathon</h2>
+                    </header>
+
+                    <footer class="update-info">
+                        <abbr class="published" title="2011-09-28T14:44:00-06:00">
+                            September 28th 2011
+                        </abbr>
+                    </footer>
+
+                    <div class="update-content">
+                        <p>The Omaha Half Marathon was this past Sunday (9/25) and as planned I competed in it. I wasn't as well trained leading into the race as I had hoped, but all in all I did pretty well. I placed 40th overall with a time of 90:35 which comes out to 6:55 mile splits. My goal was to break 90 minutes, so I came up a little short, but there is always the Lincoln Half in May. <a href="http://mtecresults.com/runner/show?rid=1221&race=530">Detailed Results</a></p>
+                    </div>
+                </article></li><!-- end of an update article -->
+
+                <li><article class="update">
+                    <header>
+                        <h2 class="update-title">Blog Post - <a href="http://joshbranchaud.wordpress.com/2011/09/23/i-already-know-my-tex-file-has-errors/">I already know my tex file has errors!</a></h2>
+                    </header>
+
+                    <footer class="update-info">
+                        <abbr class="published" title="2011-09-23T14:44:00-06:00">
+                            September 23rd 2011
+                        </abbr>
+                    </footer><!-- end of update-info -->
+
+                    <div class="update-content">
+                        <p>I have been doing a lot of LaTeX file creation lately. When compiling a file that I am not 'done' with, I often get a ton of error/warning messages that I don't care to hear about. I wondered if there was a way to suppress or ignore them and here is what I have come up with. <a href="http://joshbranchaud.wordpress.com/2011/09/23/i-already-know-my-tex-file-has-errors/">Read more...</a></p>
+                    </div>
+                </article></li><!-- end of an update article -->
+
+                <li><article class="update">
+                    <header>
+                        <h2 class="update-title">A Weekend in Pittsburgh</h2>
+                    </header>
+                    
+                    <footer class="update-info">
+                        <abbr class="published" title="2011-09-21T14:44:00-06:00">
+                            September 21st 2011
+                        </abbr>
+                    </footer><!-- end of update-info -->
+
+                    <div class="update-content">
+                        <p>It was a short trip, but the 2 and 1/2 days I just spent in Pittsburgh, PA this past weekend were great. The reason for this trip was to have a meeting between those involved in getting a recent research grant. The grant is between about 6 researchers spread out between <a href="http://cse.unl.edu">UNL</a>, <a href="http://www.ics.uci.edu/">UCI</a> and <a href="http://www.sei.cmu.edu/">CMU</a>. We got to meet all the PIs and their students and have a number of brainstorming sessions about large scale, distributed software development and the theory and tools that can aid it. We will call ourselves SCALE (Social Coordination Across Large Environments) and we can be found online at <a href="http://www.SCALEresearchgroup.org">SCALEResearchGroup.org</a>.</p>
+                    </div>
+                </article></li><!-- end of an update article -->
+
+                <li><article class="update">
+                    <header>
+                        <h2 class="update-title">A New Semester Begins</h2>
+                    </header>
+
+                    <footer class="update-info">
+                        <abbr class="published" title="2011-09-02T14:44:00-06:00">
+                            September 2nd 2011
+                        </abbr>
+                    </footer><!-- end of update-info -->
+
+                    <div class="update-content">
+                        <p>I have made it through the first two weeks of my graduate career (only 62 more to go, not that I am counting). I now know what grad school is all about. It is all about sifting through hundreds of papers, so you can read tens of those papers, so that you can write one paper. Repeat that a couple times and then graduate!</p>
+                    </div>
+                </article></li><!-- end of an update article -->
+
+				<li><article class="update">
+                    <header>
+                        <h2 class="update-title">Reykjavik and Taize</h2>
+                    </header>
+
+                    <footer class="update-info">
+                        <abbr class="published" title="2011-07-10T14:44:00-06:00"><!-- YYYY-MM-DDThh:mm:ss+ZZ:ZZ -->
+                            July 26th 2011
+                        </abbr>
+                    </footer><!-- end of update-info -->
+
+                    <div class="update-content">
+						<p>I am out of town (more specifically, the country) for the next two weeks for an excursion through Iceland and France. We just got to Reykjavik, Iceland today and in about 4 days we will be headed to a place called Taize in France where we will stay for a week. Adventures will be had!</p>
+                    </div>
+                </article></li><!-- end of an update article -->
+
+                <li><article class="update">
+                    <header>
+                        <h2 class="update-title">Blog Post - <a href="http://joshbranchaud.wordpress.com/2011/07/13/google-definitely-got-some-features-right/">Google+ definitely got some features right</a></h2>
+                    </header>
+
+                    <footer class="update-info">
+                        <abbr class="published" title="2011-07-10T14:44:00-06:00"><!-- YYYY-MM-DDThh:mm:ss+ZZ:ZZ -->
+                            July 13th 2011
+                        </abbr>
+                    </footer><!-- end of update-info -->
+
+                    <div class="update-content">
+                        <p>I have had Google+ for about a week now and I found some features that I like, so I thought I would write a quick post to point them out. Check out the article and let me know what features you think Google has done a good job with. <a href="http://joshbranchaud.wordpress.com/2011/07/13/google-definitely-got-some-features-right/">Read more...</a></p>
+                    </div>
+                </article></li><!-- end of an update article -->
+
+                <li><article class="update">
+                    <header>
+                        <h2 class="update-title">The rest of the pages are up. We're live!</h2>
+                    </header>
+
+                    <footer class="update-info">
+                        <abbr class="published" title="2011-07-10T14:44:00-06:00"><!-- YYYY-MM-DDThh:mm:ss+ZZ:ZZ -->
+                            July 11th 2011
+                        </abbr>
+                    </footer><!-- end of update-info -->
+
+                    <div class="update-content">
+                        <p>We're live! I just got the rest of the pages, which are linked to in the top navigation, built and online. There are a few holes here and there and I haven't plugged in all the content, but for the most part it is good to go. You might also notice the fancy links I put at the top right for <a href="http://www.twitter.com/jbrancha">twitter</a>, <a href="http://www.linkedin.com/pub/josh-branchaud/30/b42/928">LinkedIn</a>, and <a href="http://github.com/jbranchaud">GitHub</a>.</p>
+                    </div>
+                </article></li><!-- end of an update article -->
+
+                <li><article class="update">
+                    <header>
+                        <h2 class="update-title">New Website</h2>
+                    </header>
+
+                    <footer class="update-info">
+                        <abbr class="published" title="2011-07-11T14:39:00-06:00"><!-- YYYY-MM-DDThh:mm:ss+ZZ:ZZ -->
+                            July 11th 2011
+                        </abbr>
+                    </footer><!-- end of update-info -->
+
+                    <div class="update-content">
+                        <p>Well, you're looking at it. It took me an entire Sunday and a little bit of Monday evening to get this sucker up and running, but I am pretty pleased with the outcome. I have needed some sort of online portfolio for a while now and I think this website fits that role pretty well. I will do my best to keep everything up to date, time permitting of course. Thanks for checking it out.</p>
+                    </div>
+                </article></li><!-- end of an update article -->
+
+                <!-- Update Template Following - Copy and Paste -->
+                <!--<li><article class="update">
+                    <header>
+                        <h2 class="update-title">Update Title 3</h2>
+                    </header>
+
+                    <footer class="update-info">
+                        <abbr class="published" title="2011-07-10T14:46:00-06:00">
+                            July 10th 2011
+                        </abbr>
+                    </footer>
+
+                    <div class="update-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis nunc vitae libero iaculis elementum. Nullam et justo <a href="#">non sapien</a> dapibus blandit nec et leo. Ut ut malesuada tellus.</p>
+                    </div>
+                </article></li>--><!-- end of an update article -->
+
+            </ol><!-- end of updates-list -->
+
+        </div><!-- end of updates -->
+    
+    </section><!-- end of content -->
+
+    <footer id="contentinfo" class="body">
+        <p>2011 - Josh Branchaud</p>
+    </footer><!-- end of contentinfo -->
+
+</body><!-- end of index -->
+
+</html>

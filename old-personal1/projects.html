@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+    Webmaster: Josh Branchaud
+
+    Big thanks to Enrique Ramirez for an amazing HTML5 tutorial at:
+    http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/
+-->
+
+<head>
+	<meta charset="utf-8" />
+	<title>Projects - JoshBranchaud.com</title>
+	
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/op1-main.css" />
+	
+	<!-- Javascripts -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+	<!-- For those using IE6 and IE7, update it, uninstall it, and then download a real browser like Chrome or Firefox -->
+
+	<!-- Google Analytics Stuff -->
+	<script type="text/javascript">
+	
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-21389741-2']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script><!-- end of Google Analytics Stuff -->
+	
+</head>
+
+<body id="index" class="home">
+
+	<!-- Fork Me on GitHub Logo/Link -->
+    <a href="http://github.com/jbranchaud">
+    	<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/abad93f42020b733148435e2cd92ce15c542d320/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub">
+    </a>
+    
+    <header id="banner" class="body">
+
+		<!-- Follow Me on Twitter Logo/Link -->
+	    <div id="twitterfollow">
+	        <a href="http://www.twitter.com/jbrancha"><img src="http://twitter-badges.s3.amazonaws.com/follow_me-b.png" alt="Follow jbrancha on Twitter"/></a>
+	    </div>
+
+		<!-- Find Me on LinkedIn Logo/Link -->
+	    <div id="linkedinshare">
+	        <a href="http://www.linkedin.com/pub/josh-branchaud/30/b42/928"><img src="http://www.linkedin.com/img/webpromo/btn_viewmy_160x25.png" width="160" height="25" border="0" alt="View Josh Branchaud's profile on LinkedIn"></a>
+	    </div>
+
+		<h1><a href="index.html">Josh Branchaud</br></a>
+        <strong>The internet is a series of tubes and somehow you found your way here</strong></h1>
+
+        <nav><ul>
+            <li><a href="index.html">home</a></li>
+            <li class="active"><a href="projects.html">projects</a></li>
+            <li><a href="research.html">research</a></li>
+            <li><a href="resources.html">resources</a></li>
+            <li><a href="http://joshbranchaud.wordpress.com">blog</a></li>
+            <li><a href="http://www.flickr.com/photos/jbranchaud/" title="My Photography">photography</a></li>
+        </ul></nav>
+
+	</header><!-- end of banner -->
+
+    <aside id="featured" class="body"><article>
+
+        <hgroup>
+            <h2>Projects</h2>
+        </hgroup>
+        <p>This page is where I will talk about all my projects and link to them as well.</p>
+
+    </article></aside><!-- end of featured -->
+
+    <section id="content" class="body">
+
+        <div id="updates" class="body">
+
+            <h2>Current Projects</h2>
+
+            <ol id="updates-list">
+
+                <li><article class="update">
+                    <header>
+                        <h2 class="update-title">Interprocedural DiSE</h2>
+                    </header>
+
+                    <footer class="update-info">
+                            Summer of 2011
+                    </footer><!-- end of update-info -->
+
+                    <div class="update-content">
+                        <p>This is a <a href="http://code.google.com/soc/">Google Summer of Code</a> project that I am fortunate enough to be able to participate in. I am working with some amazing folks at NASA on an open-source software verification technique. The technique is called DiSE (Directed Incremental Symbolic Execution) and they have been working on it for a while now (check out the <a href="http://portal.acm.org/citation.cfm?id=1993558">publication</a>). My task this summer is to work with them to extend it beyond an intraprocedural analysis to an interprocedural analysis. It is going really well, just over a month left.</p>
+                    </div>
+                </article></li><!-- end of an update article -->
+
+                <li><article class="update">
+                    <header>
+                        <h2 class="update-title">MudSolver</h2>
+                    </header>
+
+                    <footer class="update-info">
+                            June 2011 - present
+                    </footer><!-- end of update-info -->
+
+                    <div class="update-content">
+                        <p><a href="https://github.com/jbranchaud/MudSolver">MudSolver</a> is my (not so) cleverly named Java-based Constraint Satisfaction Problem (CSP) solver. In a Constraint Processing class I took, we got to build CSP solvers using a variety of algorithms/techniques. The problem is that we had to build these on top of a black-box CSP framework that was a little clunky and awkward to use. So I thought to myself, "Why not just build my own from the ground up?"</p>
+                    </div>
+                </article></li><!-- end of an update article -->
+
+                <li><article class="update">
+                    <header>
+                        <h2 class="update-title">RedRockSolver</h2>
+                    </header>
+
+                    <footer class="update-info">
+                            June 2011 - present
+                    </footer><!-- end of update-info -->
+                    
+                    <div class="update-content">
+                        <p><a href="https://github.com/jbranchaud/RedRockSolver">RedRockSolver</a> is my Ruby-based Constraint Satisfaction Problem (CSP) solver. It is basically the same story as the MudSolver. Additionally, I am trying to learn Ruby and I figured one of the best ways to do that would be to just start writing a full-blown project in it.</p>
+                    </div>
+                </article></li><!-- end of an update article -->
+
+            </ol>
+
+            <h2>Past Projects</h2>
+
+            <ol id="past-projects">
+
+                <li>I will fill these in later.</li>
+
+            </ol><!-- end of past-projects -->
+                <!-- Update Template Following - Copy and Paste -->
+                <!--<li><article class="update">
+                    <header>
+                        <h2 class="update-title">Update Title 3</h2>
+                    </header>
+
+                    <footer class="update-info">
+                        <abbr class="published" title="2011-07-10T14:46:00-06:00">
+                            July 10th 2011
+                        </abbr>
+                    </footer>
+
+                    <div class="update-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis nunc vitae libero iaculis elementum. Nullam et justo <a href="#">non sapien</a> dapibus blandit nec et leo. Ut ut malesuada tellus.</p>
+                    </div>
+                </article></li>--><!-- end of an update article -->
+
+            </ol><!-- end of updates-list -->
+
+        </div><!-- end of updates -->
+    
+    </section><!-- end of content -->
+
+    <footer id="contentinfo" class="body">
+        <p>2011 - Josh Branchaud</p>
+    </footer><!-- end of contentinfo -->
+
+</body><!-- end of index -->
+
+</html>
